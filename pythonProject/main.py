@@ -34,7 +34,7 @@ def interpolar(tabela, x_vals, x, grau=None):
 
 # x = [0, 0.1, 0.2, 0.3, 0.4, 0.5]
 x_vals = [i * 0.1 for i in range(6)]      
-coef = [1, 0, -1]  # Coeficientes para o polinômio
+coef = [1, 0, -1]  # Coeficientes para o polinômio x - x^2
 y_vals = [valor_polinomio(x, coef) for x in x_vals]
 
 # Gerar a tabela de diferenças
