@@ -19,7 +19,7 @@ def interpolar_recursivo(tabela, s, grau, ordem=1):
     for i in range(ordem):
         fator *= (s - i) / (i + 1)
     return fator + interpolar_recursivo(tabela, s, grau, ordem + 1)
-
+    
 #Função que controla a interpolação e o grau do polinômio
 def interpolar(tabela, x_vals, x, grau=None):
     h = x_vals[1] - x_vals[0]  # Espaçamento constante (0,1 no enunciado)
