@@ -8,8 +8,9 @@ def diferencas_finitas(valores):
 
 #Calcula o valor de um polinômio dado os coeficientes
 def valor_polinomio(x, coef):
-    return sum(c * x**i for i, c in enumerate(coef))
-
+    return sum(c * x**i for i, c in enumerate(coef)) #aqui é feito a soma dos coeficientes multiplicados por x^i, onde i é o grau do coeficiente. enumerate(coef) 
+                                                                        #retorna o índice e o valor do coeficiente, que é usado para calcular o valor do polinômio
+                                                                        
 #Função recursiva que calcula a interpolação para polinômios de qualquer grau
 def interpolar_recursivo(tabela, s, grau, ordem=1):
     if ordem > grau:
